@@ -4,7 +4,7 @@ import CreateCV from './containerPages/CreateCV'
 import HomePage from './containerPages/HomePage'
 import AdminPage from './containerPages/adminPage'
 import D3ToReact from './components/D3ToReact'
-import TestAssessment from './components/TestAssessment'
+import TestAssessment from './components/testAssessment'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
