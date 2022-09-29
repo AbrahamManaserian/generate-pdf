@@ -1,6 +1,6 @@
 import './App.css';
 // import GeneratePdf from './components/GeneratePdf';
-import CreateCV from './containerPages/createCV'
+import CreateCV from './containerPages/CreateCV'
 import HomePage from './containerPages/homePage'
 import AdminPage from './containerPages/adminPage'
 import D3ToReact from './components/d3ToReact'
