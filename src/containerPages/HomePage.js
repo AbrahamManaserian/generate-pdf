@@ -3,8 +3,17 @@ import image1 from '../images/1.webp'
 import image2 from '../images/2.jpeg'
 import image3 from '../images/3.webp'
 import { Link } from 'react-router-dom'
+import {db} from '../firebas'
+import { collection, addDoc } from "firebase/firestore";
+// import firebase from 'firebase'
+
 
 export default function HomePage () {
+    async function writeData () {
+       
+          
+    }
+    writeData()
     return (
         <Grid item container xs ={12} spacing={3}>
             <Grid item container xs={12} justifyContent='center' sx={{marginTop:3}}>
