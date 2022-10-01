@@ -3,6 +3,8 @@ import './App.css';
 import CreateCV from './containerPages/CreateCV'
 import HomePage from './containerPages/HomePage'
 import AdminPage from './containerPages/adminPage'
+import QuestionsPage from './containerPages/QuestionsPage'
+import CreateAssessment from './containerPages/CreateAssessmentPage'
 import D3ToReact from './components/D3ToReact'
 import TestAssessment from './components/testAssessment'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -17,7 +19,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomePage/>}/>
-        <Route path='/admin' element={<AdminPage/>}/>
+        <Route path='/admin' element={<AdminPage/>}>
+           
+        </Route>
+        <Route path='/admin/createAssessment' element={<CreateAssessment/>}/>
+        <Route path='/admin/questions' element={<QuestionsPage/>}/>
         <Route path='/Assessment-Web-Application' element={<TestAssessment/>}/>
         <Route path='/d3.js-to-react' element={<D3ToReact/>}/>
         <Route path='/createCV' element={<CreateCV/>}>
