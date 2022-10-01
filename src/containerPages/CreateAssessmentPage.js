@@ -52,7 +52,7 @@ export default function CreateAssessment () {
         </Grid>
         <Grid item xs={12} container direction='row'  padding={2} sx={{border:5,borderColor:'#eeeeee',overflow:'hidden'}} >
             
-           <Grid item container xs={4} direction='column'>
+           <Grid item container sm={12} md={4} direction='column' >
               <TextField 
                  fullWidth
                  // sx={{'& .MuiFormLabel-root':{fontSize:'1vw',},width:300}}
@@ -64,8 +64,8 @@ export default function CreateAssessment () {
                  label="Assessment Name"
                  onChange={(e)=>setAssessment({...assessment,name:e.target.value})}
               />
-              <List
-                  sx={{ width: '100%',  bgcolor: 'background.paper' }}
+              <List 
+                  sx={{ width: '100%',  bgcolor: 'background.paper',borderBottom:1,marginBottom:2 }}
                   component="nav"
                   aria-labelledby="nested-list-subheader"
                   subheader={
@@ -106,7 +106,7 @@ export default function CreateAssessment () {
                </List>
 
            </Grid>
-           <Grid item container xs={8} sx={{p:1 }} >
+           <Grid item container sm={12} md={8} sx={{p:1 }} >
              {assessment.questionsAnswers.map((item,index)=> {
                 // console.log(item[Object.keys(item)[0]])
                if (item !== -1)   return (
