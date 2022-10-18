@@ -117,7 +117,7 @@ export default function Tempate1 () {
     const handleChangeInputs = () => {
 
     }
-    console.log(inputs)
+    // console.log(inputs)
     function PdfPreview ({
         name,
         lastName,
