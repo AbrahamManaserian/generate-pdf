@@ -8,6 +8,7 @@ import CreateAssessment from './containerPages/CreateAssessmentPage'
 import D3ToReact from './components/D3ToReact'
 import TestAssessment from './components/testAssessment'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ChallengePDF from './ChallengePdf';
 
 function App() {
   return (
@@ -26,9 +27,11 @@ function App() {
         <Route path='/admin/questions' element={<QuestionsPage/>}/>
         <Route path='/Assessment-Web-Application' element={<TestAssessment/>}/>
         <Route path='/d3.js-to-react' element={<D3ToReact/>}/>
-        <Route path='/createCV' element={<CreateCV/>}>
+        <Route path='/d3.js-to-react' element={<D3ToReact/>}/>
+        <Route path='/challengePDF' element={<ChallengePDF/>}>
           <Route path=':template' element={<CreateCV/>}/>
         </Route>
+
       </Routes>
     </BrowserRouter>
   );
