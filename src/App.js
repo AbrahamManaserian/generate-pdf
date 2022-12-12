@@ -19,19 +19,17 @@ function App() {
     // </div>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<HomePage/>}/>
-        <Route path='/admin' element={<AdminPage/>}>
-           
+        <Route path="/" element={<HomePage />} />
+        <Route path="/admin" element={<AdminPage />}></Route>
+        <Route path="/admin/createAssessment" element={<CreateAssessment />} />
+        <Route path="/admin/questions" element={<QuestionsPage />} />
+        <Route path="/Assessment-Web-Application" element={<TestAssessment />} />
+        <Route path="/d3.js-to-react" element={<D3ToReact />} />
+        <Route path="/d3.js-to-react" element={<D3ToReact />} />
+        <Route path="/challengePDF" element={<ChallengePDF />} />
+        <Route path="/createCV" element={<CreateCV />}>
+          <Route path=":template" element={<CreateCV />} />
         </Route>
-        <Route path='/admin/createAssessment' element={<CreateAssessment/>}/>
-        <Route path='/admin/questions' element={<QuestionsPage/>}/>
-        <Route path='/Assessment-Web-Application' element={<TestAssessment/>}/>
-        <Route path='/d3.js-to-react' element={<D3ToReact/>}/>
-        <Route path='/d3.js-to-react' element={<D3ToReact/>}/>
-        <Route path='/challengePDF' element={<ChallengePDF/>}>
-          <Route path=':template' element={<CreateCV/>}/>
-        </Route>
-
       </Routes>
     </BrowserRouter>
   );

@@ -8,8 +8,7 @@ import Template3 from '../components/Template3'
 
 
 export default function CreateCV () {
-    let params = useParams()
-    // console.log(params)
+    let params = useParams();
     return (
         <div>
            {params.template.includes(1) && <Template1/>}
