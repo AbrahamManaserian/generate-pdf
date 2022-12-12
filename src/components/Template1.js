@@ -117,7 +117,8 @@ export default function Tempate1() {
   const Input = styled('input')({
     display: 'none',
   });
-
+  const handleChangeInputs = () => {};
+  // console.log(inputs)
   function PdfPreview({
     name,
     lastName,
@@ -268,37 +269,30 @@ export default function Tempate1() {
                 >
                   Education
                 </Text>
-                {
-                  educations.map((item, index) => {
-                    return (
-                      <View style={{ paddingTop: '15px' }} key={index}>
-                        <Text style={{ fontSize: '9px', fontFamily: 'Ubuntu', color: 'white' }}>
-                          {item.duration}
-                        </Text>
-                        <Text
-                          style={{
-                            fontSize: '10px',
-                            fontFamily: 'Ubuntu',
-                            color: 'white',
-                            fontWeight: 'bold',
-                          }}
-                        >
-                          {item.degree}
-                        </Text>
-                        <Text
-                          style={{
-                            fontSize: '10px',
-                            fontFamily: 'Ubuntu',
-                            color: 'white',
-                            fontWeight: 'medium',
-                          }}
-                        >
-                          {item.university}
-                        </Text>
-                      </View>
-                    );
-                  });
-                }
+                {educations.map((item, index) => {
+                  return (
+                    <View style={{ paddingTop: '15px' }} key={index}>
+                      <Text style={{ fontSize: '9px', fontFamily: 'Ubuntu', color: 'white' }}>
+                        {item.duration}
+                      </Text>
+                      <Text
+                        style={{ fontSize: '10px', fontFamily: 'Ubuntu', color: 'white', fontWeight: 'bold' }}
+                      >
+                        {item.degree}
+                      </Text>
+                      <Text
+                        style={{
+                          fontSize: '10px',
+                          fontFamily: 'Ubuntu',
+                          color: 'white',
+                          fontWeight: 'medium',
+                        }}
+                      >
+                        {item.university}
+                      </Text>
+                    </View>
+                  );
+                })}
                 <Text
                   style={{
                     fontSize: '20px',
@@ -312,34 +306,32 @@ export default function Tempate1() {
                   }}
                 >
                   Expertise
-                </Text>;
-                {
-                  expertiseArray.map((item, index) => {
-                    return (
-                      <View
-                        key={index}
+                </Text>
+                {expertiseArray.map((item, index) => {
+                  return (
+                    <View
+                      key={index}
+                      style={{
+                        display: 'flex',
+                        flexDirection: 'row',
+                        flexWrap: 'nowrap',
+                        alignItems: 'flex-end',
+                      }}
+                    >
+                      <Text
                         style={{
-                          display: 'flex',
-                          flexDirection: 'row',
-                          flexWrap: 'nowrap',
-                          alignItems: 'flex-end',
+                          fontSize: '20px',
+                          fontFamily: 'Ubuntu',
+                          color: 'white',
+                          paddingRight: '5px',
                         }}
                       >
-                        <Text
-                          style={{
-                            fontSize: '20px',
-                            fontFamily: 'Ubuntu',
-                            color: 'white',
-                            paddingRight: '5px',
-                          }}
-                        >
-                          .
-                        </Text>
-                        <Text style={{ fontSize: '9px', fontFamily: 'Ubuntu', color: 'white' }}>{item}</Text>
-                      </View>
-                    );
-                  });
-                }
+                        .
+                      </Text>
+                      <Text style={{ fontSize: '9px', fontFamily: 'Ubuntu', color: 'white' }}>{item}</Text>
+                    </View>
+                  );
+                })}
                 <Text
                   style={{
                     fontSize: '20px',
@@ -354,25 +346,23 @@ export default function Tempate1() {
                   }}
                 >
                   Language
-                </Text>;
-                {
-                  languageArray.map((item, index) => {
-                    return (
-                      <Text
-                        key={index}
-                        style={{
-                          fontSize: '10px',
-                          fontFamily: 'Ubuntu',
-                          color: 'white',
-                          paddingBottom: '5px',
-                          fontWeight: 'medium',
-                        }}
-                      >
-                        {item}
-                      </Text>
-                    );
-                  });
-                }
+                </Text>
+                {languageArray.map((item, index) => {
+                  return (
+                    <Text
+                      key={index}
+                      style={{
+                        fontSize: '10px',
+                        fontFamily: 'Ubuntu',
+                        color: 'white',
+                        paddingBottom: '5px',
+                        fontWeight: 'medium',
+                      }}
+                    >
+                      {item}
+                    </Text>
+                  );
+                })}
               </View>
             </View>
             <View
