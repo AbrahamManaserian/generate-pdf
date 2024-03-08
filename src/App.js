@@ -28,9 +28,9 @@ function App() {
     //   <HomePage/>
     // </div>
     <BrowserRouter>
-      <BarMenu />
+      {/* <BarMenu /> */}
       <Routes>
-        <Route path="/" element={<NewHomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />}></Route>
         <Route path="/services" element={<ServicesPage />}></Route>
         <Route path="/blog" element={<BlogPage />}></Route>

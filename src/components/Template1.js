@@ -580,6 +580,7 @@ export default function Tempate1() {
     ),
     [pdfDoc]
   );
+
   return (
     <Grid item container xs={12} spacing={2} padding={3} paddingBottom={20}>
       <Grid item container sm={12} md={6} alignItems="flex-start">

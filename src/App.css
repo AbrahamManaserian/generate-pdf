@@ -19,3 +19,5 @@
 background-color:#5F5FB0;
 /* text-decoration:double */
 }
+
+iframe#webpack-dev-server-client-overlay{display:none!important}
